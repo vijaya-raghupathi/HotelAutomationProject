@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HotelAppSuite]">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Hotel Tests(failed)">
+    <classes>
+      <class name="tests.CancelBookingTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateCancellationMessageIsDisplayed"/>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- tests.CancelBookingTest -->
+      <class name="tests.SearchHotelTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setupReport"/>
+          <include name="validateDefaultDropdownSelection"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- tests.SearchHotelTest -->
+      <class name="tests.BookHotelTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setupReport"/>
+          <include name="testInvalidCVV"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- tests.BookHotelTest -->
+    </classes>
+  </test> <!-- Hotel Tests(failed) -->
+</suite> <!-- Failed suite [HotelAppSuite] -->

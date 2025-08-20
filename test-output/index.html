@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-HotelAppSuite" class="navigator-link">
+              <span class="suite-name border-failed">HotelAppSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-HotelAppSuite" class="navigator-link ">
+                    <span>C:\Users\Vijaya\eclipse-workspace\HotelApp\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-HotelAppSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-HotelAppSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-HotelAppSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-HotelAppSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-HotelAppSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-HotelAppSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 3 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-HotelAppSuite" class="hide-methods failed suite-HotelAppSuite"> (hide)</a> <!-- hide-methods failed suite-HotelAppSuite -->
+                      <a href="#" panel-name="suite-HotelAppSuite" class="show-methods failed suite-HotelAppSuite"> (show)</a> <!-- show-methods failed suite-HotelAppSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-HotelAppSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="testInvalidCVV">testInvalidCVV</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.CancelBookingTest" class="method navigator-link" hash-for-method="validateCancellationMessageIsDisplayed">validateCancellationMessageIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="validateDefaultDropdownSelection">validateDefaultDropdownSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-HotelAppSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-HotelAppSuite" class="hide-methods passed suite-HotelAppSuite"> (hide)</a> <!-- hide-methods passed suite-HotelAppSuite -->
+                      <a href="#" panel-name="suite-HotelAppSuite" class="show-methods passed suite-HotelAppSuite"> (show)</a> <!-- show-methods passed suite-HotelAppSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-HotelAppSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.CancelBookingTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.CancelBookingTest" class="method navigator-link" hash-for-method="navigateToBookedItinerary">navigateToBookedItinerary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="testBlankFormSubmission">testBlankFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="testFullBookingFlow">testFullBookingFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="testSearchHotel">testSearchHotel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateEmptyUsernameAndPassword">validateEmptyUsernameAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SelectHotelTest" class="method navigator-link" hash-for-method="validateGSTCalculation">validateGSTCalculation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SelectHotelTest" class="method navigator-link" hash-for-method="validateHotelDetailsDisplayed">validateHotelDetailsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateLoginFieldsPresence">validateLoginFieldsPresence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateLoginPageTitle">validateLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="validateSearchFieldsPresence">validateSearchFieldsPresence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="validateSearchPageTitle">validateSearchPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="validateSearchWithoutEnteringFields">validateSearchWithoutEnteringFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HotelAppSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateSuccessfulLogin">validateSuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-HotelAppSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-HotelAppSuite" class="panel HotelAppSuite">
+          <div class="suite-HotelAppSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CancelBookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCancellationMessageIsDisplayed">
+                  </a> <!-- validateCancellationMessageIsDisplayed -->
+                  <span class="method-name">validateCancellationMessageIsDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: Cancellation message not displayed. expected [true] but found [false]
+	at tests.CancelBookingTest.validateCancellationMessageIsDisplayed(CancelBookingTest.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-failed -->
+          <div class="suite-HotelAppSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SearchHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDefaultDropdownSelection">
+                  </a> <!-- validateDefaultDropdownSelection -->
+                  <span class="method-name">validateDefaultDropdownSelection</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#location&quot;}
+  (Session info: chrome=139.0.7258.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a07e8e60677b836a9838c04cfa6ff9d, findElement {using=id, value=location}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\Vijaya\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53664/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a07e8e60677b836a9838c04cfa6ff9d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at tests.SearchHotelTest.validateDefaultDropdownSelection(SearchHotelTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-failed -->
+          <div class="suite-HotelAppSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.BookHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidCVV">
+                  </a> <!-- testInvalidCVV -->
+                  <span class="method-name">testInvalidCVV</span>
+                  <div class="stack-trace">java.lang.AssertionError: CVV validation failed expected [true] but found [false]
+	at tests.BookHotelTest.testInvalidCVV(BookHotelTest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-failed -->
+          <div class="suite-HotelAppSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SelectHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGSTCalculation">
+                  </a> <!-- validateGSTCalculation -->
+                  <span class="method-name">validateGSTCalculation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHotelDetailsDisplayed">
+                  </a> <!-- validateHotelDetailsDisplayed -->
+                  <span class="method-name">validateHotelDetailsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-passed -->
+          <div class="suite-HotelAppSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CancelBookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToBookedItinerary">
+                  </a> <!-- navigateToBookedItinerary -->
+                  <span class="method-name">navigateToBookedItinerary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-passed -->
+          <div class="suite-HotelAppSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmptyUsernameAndPassword">
+                  </a> <!-- validateEmptyUsernameAndPassword -->
+                  <span class="method-name">validateEmptyUsernameAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginFieldsPresence">
+                  </a> <!-- validateLoginFieldsPresence -->
+                  <span class="method-name">validateLoginFieldsPresence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginPageTitle">
+                  </a> <!-- validateLoginPageTitle -->
+                  <span class="method-name">validateLoginPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSuccessfulLogin">
+                  </a> <!-- validateSuccessfulLogin -->
+                  <span class="method-name">validateSuccessfulLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-passed -->
+          <div class="suite-HotelAppSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SearchHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchHotel">
+                  </a> <!-- testSearchHotel -->
+                  <span class="method-name">testSearchHotel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchFieldsPresence">
+                  </a> <!-- validateSearchFieldsPresence -->
+                  <span class="method-name">validateSearchFieldsPresence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchPageTitle">
+                  </a> <!-- validateSearchPageTitle -->
+                  <span class="method-name">validateSearchPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchWithoutEnteringFields">
+                  </a> <!-- validateSearchWithoutEnteringFields -->
+                  <span class="method-name">validateSearchWithoutEnteringFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-passed -->
+          <div class="suite-HotelAppSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BookHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlankFormSubmission">
+                  </a> <!-- testBlankFormSubmission -->
+                  <span class="method-name">testBlankFormSubmission</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFullBookingFlow">
+                  </a> <!-- testFullBookingFlow -->
+                  <span class="method-name">testFullBookingFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HotelAppSuite-class-passed -->
+        </div> <!-- panel HotelAppSuite -->
+        <div panel-name="test-xml-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Vijaya\eclipse-workspace\HotelApp\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;HotelAppSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Hotel Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.SearchHotelTest&quot;/&gt;
+      &lt;class name=&quot;tests.SelectHotelTest&quot;/&gt;
+      &lt;class name=&quot;tests.BookHotelTest&quot;/&gt;
+      &lt;class name=&quot;tests.CancelBookingTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Hotel Tests --&gt;
+&lt;/suite&gt; &lt;!-- HotelAppSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for HotelAppSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Hotel Tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for HotelAppSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for HotelAppSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_HotelAppSuite');
+function tableData_HotelAppSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateCancellationMessageIsDisplayed')
+data.setCell(0, 2, 'tests.CancelBookingTest')
+data.setCell(0, 3, 40734);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'navigateToBookedItinerary')
+data.setCell(1, 2, 'tests.CancelBookingTest')
+data.setCell(1, 3, 19687);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFullBookingFlow')
+data.setCell(2, 2, 'tests.BookHotelTest')
+data.setCell(2, 3, 9955);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testInvalidCVV')
+data.setCell(3, 2, 'tests.BookHotelTest')
+data.setCell(3, 3, 5691);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testBlankFormSubmission')
+data.setCell(4, 2, 'tests.BookHotelTest')
+data.setCell(4, 3, 4307);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateGSTCalculation')
+data.setCell(5, 2, 'tests.SelectHotelTest')
+data.setCell(5, 3, 3451);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateHotelDetailsDisplayed')
+data.setCell(6, 2, 'tests.SelectHotelTest')
+data.setCell(6, 3, 3352);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSearchHotel')
+data.setCell(7, 2, 'tests.SearchHotelTest')
+data.setCell(7, 3, 3268);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateSearchWithoutEnteringFields')
+data.setCell(8, 2, 'tests.SearchHotelTest')
+data.setCell(8, 3, 1540);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateDefaultDropdownSelection')
+data.setCell(9, 2, 'tests.SearchHotelTest')
+data.setCell(9, 3, 1347);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateSearchPageTitle')
+data.setCell(10, 2, 'tests.SearchHotelTest')
+data.setCell(10, 3, 1301);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateSuccessfulLogin')
+data.setCell(11, 2, 'tests.LoginTest')
+data.setCell(11, 3, 1177);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateSearchFieldsPresence')
+data.setCell(12, 2, 'tests.SearchHotelTest')
+data.setCell(12, 3, 1143);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'login')
+data.setCell(13, 2, 'tests.CancelBookingTest')
+data.setCell(13, 3, 1031);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateEmptyUsernameAndPassword')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 667);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateLoginFieldsPresence')
+data.setCell(15, 2, 'tests.LoginTest')
+data.setCell(15, 3, 200);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateLoginPageTitle')
+data.setCell(16, 2, 'tests.LoginTest')
+data.setCell(16, 3, 68);
+window.suiteTableData['HotelAppSuite']= { tableData: data, tableDiv: 'times-div-HotelAppSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-HotelAppSuite">
+              </div> <!-- times-div-HotelAppSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for HotelAppSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">8 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SelectHotelTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CancelBookingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SearchHotelTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.BookHotelTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-HotelAppSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLoginPageTitle</span>
+                <span class="method-start">5326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateLoginPageTitle status=SUCCESS method=LoginTest.validateLoginPageTitle()[pri...)</span>
+                <span class="method-start">5408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLoginFieldsPresence</span>
+                <span class="method-start">8933 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateLoginFieldsPresence status=SUCCESS method=LoginTest.validateLoginFieldsPres...)</span>
+                <span class="method-start">9136 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9589 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEmptyUsernameAndPassword</span>
+                <span class="method-start">13330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmptyUsernameAndPassword status=SUCCESS method=LoginTest.validateEmptyUsern...)</span>
+                <span class="method-start">14000 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSuccessfulLogin</span>
+                <span class="method-start">18836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateSuccessfulLogin status=SUCCESS method=LoginTest.validateSuccessfulLogin()[p...)</span>
+                <span class="method-start">20018 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchPageTitle</span>
+                <span class="method-start">23582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateSearchPageTitle status=SUCCESS method=SearchHotelTest.validateSearchPageTit...)</span>
+                <span class="method-start">24889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchFieldsPresence</span>
+                <span class="method-start">29647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateSearchFieldsPresence status=SUCCESS method=SearchHotelTest.validateSearchFi...)</span>
+                <span class="method-start">30793 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateDefaultDropdownSelection</span>
+                <span class="method-start">36673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateDefaultDropdownSelection status=FAILURE method=SearchHotelTest.validateDefa...)</span>
+                <span class="method-start">40127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">40765 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchWithoutEnteringFields</span>
+                <span class="method-start">43733 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateSearchWithoutEnteringFields status=SUCCESS method=SearchHotelTest.validateS...)</span>
+                <span class="method-start">45275 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">46054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchHotel</span>
+                <span class="method-start">48749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchHotel status=SUCCESS method=SearchHotelTest.testSearchHotel()[pri:5, inst...)</span>
+                <span class="method-start">52023 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SelectHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">57180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateHotelDetailsDisplayed</span>
+                <span class="method-start">71917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateHotelDetailsDisplayed status=SUCCESS method=SelectHotelTest.validateHotelDe...)</span>
+                <span class="method-start">75272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">75658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateGSTCalculation</span>
+                <span class="method-start">78895 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateGSTCalculation status=SUCCESS method=SelectHotelTest.validateGSTCalculation...)</span>
+                <span class="method-start">82348 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BookHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">82748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBlankFormSubmission</span>
+                <span class="method-start">85776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testBlankFormSubmission status=SUCCESS method=BookHotelTest.testBlankFormSubmission...)</span>
+                <span class="method-start">90086 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">90660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidCVV</span>
+                <span class="method-start">94388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidCVV status=FAILURE method=BookHotelTest.testInvalidCVV()[pri:2, instance...)</span>
+                <span class="method-start">100269 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">100559 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFullBookingFlow</span>
+                <span class="method-start">105390 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testFullBookingFlow status=SUCCESS method=BookHotelTest.testFullBookingFlow()[pri:3...)</span>
+                <span class="method-start">115348 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CancelBookingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">115777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">119018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=login status=SUCCESS method=CancelBookingTest.login()[pri:1, instance:tests.CancelB...)</span>
+                <span class="method-start">120051 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">120419 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToBookedItinerary</span>
+                <span class="method-start">122822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToBookedItinerary status=SUCCESS method=CancelBookingTest.navigateToBookedI...)</span>
+                <span class="method-start">142514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">143218 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateCancellationMessageIsDisplayed</span>
+                <span class="method-start">146272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateCancellationMessageIsDisplayed status=FAILURE method=CancelBookingTest.vali...)</span>
+                <span class="method-start">187349 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownReport</span>
+                <span class="method-start">188017 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
