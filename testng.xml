@@ -1,0 +1,15 @@
+<suite name="HotelAppSuite">
+    <test name="Hotel Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.SearchHotelTest"/>
+             <class name="tests.SelectHotelTest"/>
+            <class name="tests.BookHotelTest"/> 
+             <class name="tests.CancelBookingTest"/>                           
+        </classes>
+    </test>
+    <listeners>
+ 	   <listener class-name="listeners.TestListener"/>
+	</listeners>
+</suite>
+
